@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
       unzip \
       zlib1g-dev \
       zlib1g \
+      libonig-dev \
     && rm -r /var/lib/apt/lists/* \
     && docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd \
     && docker-php-ext-install \

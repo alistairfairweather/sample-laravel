@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
       git \
       zip \
       unzip \
+      zlib1g \
     && rm -r /var/lib/apt/lists/* \
     && docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd \
     && docker-php-ext-install \

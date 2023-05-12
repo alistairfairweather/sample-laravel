@@ -3,7 +3,7 @@ FROM php:7.2-apache
 RUN apt-get update && apt-get install -y \
       libicu-dev \
       libpq-dev \
-      libmcrypt-dev \
+      libmcrypt4 \
       git \
       zip \
       unzip \

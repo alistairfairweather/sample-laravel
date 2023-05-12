@@ -3,7 +3,6 @@ FROM php:7.2-apache
 RUN apt-get update && apt-get install -y \
       libicu-dev \
       libpq-dev \
-      libsodium-dev \
       git \
       zip \
       unzip \
@@ -12,7 +11,6 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install \
       intl \
       mbstring \
-      libsodium \
       pcntl \
       pdo_mysql \
       pdo_pgsql \
